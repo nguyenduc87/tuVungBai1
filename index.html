@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Hiragana</title>
+    <!-- Thêm liên kết tới Google Fonts cho Noto Sans JP -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <div class="timer" id="timer">07</div>
+        <h1>Cùng nhớ bảng Hiragana nào !</h1>
+        <div class="question">
+            <p id="question">Câu hỏi sẽ xuất hiện ở đây</p>
+        </div>
+        <ul class="choices" id="choices"></ul>
+        <div>
+            <button id="nextButton" class="btn" onclick="nextQuestion()" style="display:none;">Tiếp tục</button>
+            <button id="submitButton" class="btn" onclick="submitQuiz()" style="display:none;">Xem kết quả thôi</button>
+        </div>
+        <div id="feedback" style="display:none; color: #4caf50; font-size: 20px; margin-top: 10px;"></div>
+        <div id="warning" class="warning" style="display: none;">Hết giờ ! Ấn "Tiếp tục" để làm tiếp!
+        </div>
+
+        <div class="result" id="result">
+            <h2>Kết Quả Kiểm Tra</h2>
+            <p>Tổng số câu hỏi: <span id="totalQuestions"></span></p>
+            <p>Số câu đúng: <span id="correctAnswers"></span></p>
+            <p>Số câu sai: <span id="incorrectAnswers"></span></p>
+            <p>Số câu chưa chọn đáp án: <span id="unansweredQuestions"></span></p>
+            <button class="btn" onclick="restartQuiz()">Làm lại</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

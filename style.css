@@ -1,0 +1,134 @@
+/* Toàn bộ trang */
+body {
+    font-family: 'Noto Sans JP', Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Khung chứa bài quiz */
+.quiz-container {
+    background-color: #222;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    text-align: center;
+}
+
+/* Đồng hồ đếm ngược */
+.timer {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Tiêu đề bài quiz */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Phần câu hỏi */
+.question {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #ffd700;
+}
+
+/* Các lựa chọn trả lời */
+.choices {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.choices li {
+    background-color: #444;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.choices li:hover {
+    background-color: #555;
+}
+
+.choices li.correct {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.choices li.incorrect {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    text-align: center;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    display: none;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.result h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.result p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.result p>span {
+    color: #4caf50;
+    font-weight: 600;
+}
+
+.warning {
+    color: #f44336;
+    font-size: 16px;
+}
