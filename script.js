@@ -43,7 +43,7 @@ const questions = [
     { question: "Chào buổi tối là gì?", choices: ["こんにちは", "こんばんは", "おはようございます", "じゃあ、また"], answer: "こんばんは", hiragana: "こんばんは", userAnswer: null },
     { question: "Cảm ơn anh/chị đã vất vả là gì?", choices: ["おつかれさまでした", "おさきにしつれいします", "しつれいします", "ありがとうございます"], answer: "おつかれさまでした", hiragana: "おつかれさまでした", userAnswer: null },
     { question: "Xin lỗi / cho phép tôi vào là gì?", choices: ["しつれいします", "ごめん", "どうも", "じゃあ、また"], answer: "しつれいします", hiragana: "しつれいします", userAnswer: null },
-    { question: "Cảm ơn là gì?", choices: ["どうも", "すみません", "どうぞ", "はい"], answer: "どうも", hiragana: "どうも", userAnswer: null },
+    { question: "Cảm ơn là gì?", choices: ["どうも", "いいえ", "どうぞ", "はい"], answer: "どうも", hiragana: "どうも", userAnswer: null },
     { question: "Tôi chưa hiểu là gì?", choices: ["まだ　わかりません", "わかりました", "わかりますか？", "いいえ"], answer: "まだ　わかりません", hiragana: "まだ　わかりません", userAnswer: null },
     { question: "Bạn có hiểu không? là gì?", choices: ["わかりますか？", "まだ　わかりません", "わかりました", "はい"], answer: "わかりますか？", hiragana: "わかりますか？", userAnswer: null },
     { question: "Đau quá! là gì?", choices: ["いたい！", "ごめん", "おとしましたよ！", "すみません"], answer: "いたい！", hiragana: "いたい！", userAnswer: null },
